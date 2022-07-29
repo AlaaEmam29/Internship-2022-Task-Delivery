@@ -1,0 +1,345 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Press+Start+2P&family=Roboto:wght@100;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* --- Navbar styles ------------------------------ */
+
+/* Nav Menu Items */
+
+.overlay .container {
+  height: auto;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* --- Menu Bars ------------------------------------ */
+
+.menu-bars {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+/* Rotate first bar */
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  -ms-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+/* Fade out the second bar */
+
+.change .bar2 {
+  opacity: 0;
+}
+/* Rotate last bar */
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -ms-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* navbar content  */
+.bg-nav {
+  background-color: #fafafa;
+}
+.input-sm {
+  width: 50%;
+}
+.search-input > * {
+  border-radius: 0px !important;
+  border-color: #d8d4d7;
+}
+.search-icon {
+  background-color: #fdb921;
+}
+.search-icon i {
+  color: rgba(255, 250, 240, 255);
+}
+.form-control:focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #eee;
+}
+
+.btn-login,
+.btn-login:hover {
+  color: #fdb921;
+}
+.btn-join {
+  background-color: #fdb921;
+  padding: 10px 20px;
+}
+/* --- Sections ------------------------------------ */
+/* Landing Page First Section */
+.landing-page {
+  height: 100vh;
+  background: url(../assets/images/background.png) center center / cover
+    no-repeat;
+}
+h1 {
+  color: #fdb921;
+}
+h1 span {
+  margin-left: 52px;
+}
+/* About Section */
+
+.coffee-img {
+  width: 85%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.image {
+  position: relative;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  background-color: #ee8d35;
+  width: 100px;
+  height: 120px;
+  top: -25px;
+  left: 70%;
+  z-index: -1;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  background-color: #fdb921;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  bottom: -15px;
+  left: -3%;
+
+  z-index: -1;
+}
+.about-coffee h2 {
+  color: #252b42;
+}
+.brdr {
+  margin: 1.5rem 0;
+  height: 5px;
+  background-color: #ee8d35;
+}
+.brdr:first-child {
+  width: 15%;
+}
+.brdr:last-child {
+  width: 60%;
+}
+/* Coffee Products Section */
+
+.link-color {
+  text-decoration: none;
+  color: #2aa9f1;
+}
+.link-color:hover {
+  color: rgb(42, 169, 241, 0.7);
+}
+.coffee-card-img {
+  width: 100%;
+  border-radius: 7px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.coffee-card-body h4,
+.address {
+  color: #023c41;
+}
+.coffee-card-body > * {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.rating i {
+  color: #fdcb6e;
+}
+/* Footer */
+.input-group-lg span {
+  border-color: #fdb921;
+}
+.input-group span {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991.98px) {
+  /* Overlay */
+
+  .overlay {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .overlay-slide-right {
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .overlay-slide-left {
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+  }
+  /* --- Menu Bars ------------------------------------ */
+
+  .menu-bars {
+    display: inline;
+  }
+
+  /* Nav Menu Items */
+
+  .overlay .container {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .btns-group .btn {
+    display: block;
+    margin: 2rem;
+  }
+  .btn-login {
+    border-color: #eee;
+  }
+}
+@media screen and (max-width: 360.98px)
+{
+.image::before {
+    left: 65% !important;
+}
+}
+@media screen and (max-width: 575.98px) {
+  /* Nav Menu Items */
+
+  .input-sm {
+    width: 85%;
+  }
+  /* About Section Content */
+
+  .coffee-img {
+    width: 100%;
+  }
+  .image::before {
+    left: 80%;
+  }
+  .mt-media {
+    margin-top: 2rem;
+  }
+  /* Footer Section Content */
+
+  footer .container {
+    width: 95% !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* Nav Menu Items */
+
+  .input-sm {
+    width: 60%;
+  }
+  /* About Section Content */
+
+  .coffee-img {
+    width: 60%;
+  }
+  .image::before {
+    left: 45%;
+  }
+  /* Footer Section Content */
+
+  footer .container {
+    width: 75% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* About Section Content */
+
+  .about-coffee .container {
+    width: 95% !important;
+  }
+
+  .coffee-img {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* Nav Menu Items */
+
+  .overlay .container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Nav Menu Items */
+
+  .overlay .container {
+    position: relative;
+    left: 12%;
+  }
+}
