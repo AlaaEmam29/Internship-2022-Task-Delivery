@@ -10,19 +10,19 @@
 
 ## Explaining the project 
 
-This is a website template for coffee shop implemented using Html , css, vanilla javascript and bootstrap ,
-This website has 3 sections , header in top with navigation bar  and footer at the bottom content subscriber form .
+This is a website template for a coffee shop implemented using HTML, CSS, vanilla javascript, and bootstrap. This website has 3 sections a header at the top with a navigation bar and a footer at the bottom that continues the subscriber form.
 
-well beginning with the land page  it simply  page continue background with some text in it.
+Well, beginning with the land page, it simply continues the background with some text in it.
 
-Followed by the "about"section that basically a container with 2 item the first one a picture and second paragraph continue some text with css styles.
+Followed by the "about" section, a container with 2 items The first item is an image with some CSS effects, and the second paragraph is text with CSS styles.
 
-Then we have the gallery that has some  images of coffee  and the bottom of every image you can find description i used Grid system in bootstrap to designed it.
+Then we have the gallery that has some images of coffee, and at the bottom of every image, you can find a description. I used the grid system in bootstrap to design it.
 
-Lastly we have a Footer continue a Subscription Forms.
+Lastly, we have a footer and subscription forms.
 
-Description Web application is based on CSS,HTML,JavaScript,Bootstrap framework.
- and this website is a fully responsive website so you can use in the mobile version of this website
+The web application is based on CSS, HTML, JavaScript, and the Bootstrap framework.
+
+This website is a fully responsive , so you can use the mobile version of this website.
 
 ## Requirements:
 
